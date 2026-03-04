@@ -1,35 +1,36 @@
-# 🌡️ Temperature Conversion Program
+# 📒 Contact Management System
 
-A simple Python program that converts temperature values between **Celsius (°C), Fahrenheit (°F), and Kelvin (K)**.
+A simple **Contact Management System** built using Python.
+This program allows users to **add, view, edit, and delete contacts** using a menu-driven interface.
 
-This project demonstrates basic Python concepts like:
-
-* User input
-* Conditional statements (`if-elif-else`)
-* Mathematical calculations
-* Formatted output
+It is a beginner-friendly project that demonstrates dictionary usage, loops, and conditional statements in Python.
 
 ---
 
 ## 📌 Features
 
-* Convert Celsius to Fahrenheit and Kelvin
-* Convert Fahrenheit to Celsius and Kelvin
-* Convert Kelvin to Celsius and Fahrenheit
-* Handles invalid unit input
+* ➕ Add new contacts
+* 👀 View all saved contacts
+* ✏️ Edit existing contacts
+* ❌ Delete contacts
+* 🚪 Exit the program safely
+* 📂 Stores contacts using Python dictionary
 
 ---
 
 ## 🛠️ Technologies Used
 
 * Python 3
+* Dictionary (Data Structure)
+* While loop
+* Conditional statements (`if-elif-else`)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Temperature_Conversion.py
+Contact_Management_System.py
 README.md
 ```
 
@@ -51,45 +52,59 @@ README.md
 4. Run the program:
 
    ```
-   python Temperature_Conversion.py
+   python Contact_Management_System.py
    ```
 
 ---
 
-## 💻 Example Usage
+## 💻 How the Program Works
+
+The system runs in a loop and displays a menu:
 
 ```
-Enter the temperature value: 25
-Enter the unit (C for Celsius, F for Fahrenheit, K for Kelvin): C
+1. Add Contact
+2. View Contacts
+3. Edit Contact
+4. Delete Contact
+5. Exit
 ```
 
-### Output:
+### 🔹 Add Contact
 
-```
-Celsius: 25.0 °C
-Fahrenheit: 77.00 °F
-Kelvin: 298.15 K
-```
+* Stores name as key
+* Stores phone and email as values in dictionary
+
+### 🔹 View Contacts
+
+* Displays all saved contacts
+* Shows message if no contacts exist
+
+### 🔹 Edit Contact
+
+* Updates phone number and email if contact exists
+
+### 🔹 Delete Contact
+
+* Removes contact from dictionary
 
 ---
 
-## 📖 Conversion Formulas Used
+## 📘 Example Output
 
-### Celsius to Fahrenheit
+```
+Contact Management System
+1. Add Contact
+2. View Contacts
+3. Edit Contact
+4. Delete Contact
+5. Exit
 
-F = (C × 9/5) + 32
-
-### Celsius to Kelvin
-
-K = C + 273.15
-
-### Fahrenheit to Celsius
-
-C = (F − 32) × 5/9
-
-### Kelvin to Celsius
-
-C = K − 273.15
+Enter your choice: 1
+Enter name: Swathi
+Enter phone number: 9876543210
+Enter email address: swathi@email.com
+Contact added successfully
+```
 
 ---
 
@@ -97,20 +112,21 @@ C = K − 273.15
 
 This project helps beginners understand:
 
-* Taking user input in Python
-* Using `.upper()` for case-insensitive input
-* Conditional logic
-* Formatting numbers using `:.2f`
-* Basic mathematical operations
+* Python dictionaries
+* Menu-driven programs
+* Loop control (`while True`)
+* CRUD operations (Create, Read, Update, Delete)
+* User input handling
 
 ---
 
 ## 🚀 Future Improvements
 
-* Add a loop to allow multiple conversions
-* Add a GUI using Tkinter
-* Add exception handling for invalid numeric input
-* Convert it into a web application
+* Add search contact feature
+* Add validation for phone number and email
+* Store contacts in a file (permanent storage)
+* Add GUI using Tkinter
+* Convert into a web application
 
 ---
 
@@ -118,6 +134,3 @@ This project helps beginners understand:
 
 **Swathi Shettigar**
 BCA Student
-
-
-Tell me which one you want 😄
